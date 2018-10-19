@@ -32,7 +32,16 @@ public class MasterController {
 		ModelAndView modelAndView = new ModelAndView();
         Login user = new Login();
         modelAndView.addObject("user", user);
-        modelAndView.setViewName("login");
+        modelAndView.setViewName("index");
+        return modelAndView;
+		//return "welcome";
+	}
+	@RequestMapping("/c")
+	public ModelAndView contactus() {
+		
+		ModelAndView modelAndView = new ModelAndView();
+        Login user = new Login();
+        modelAndView.setViewName("contact");
         return modelAndView;
 		//return "welcome";
 	}
